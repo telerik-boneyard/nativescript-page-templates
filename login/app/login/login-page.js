@@ -35,13 +35,23 @@ function onNavigatingTo(args) {
     page.bindingContext = loginViewModel;
 }
 
-function onLoginFacebook(loginResponse) {
+function onLoginFacebookButtonTap(loginResponse) {
     if (loginResponse && !loginResponse.error) {
         frameModule.topmost().navigate({
             moduleName: "home/home-page",
             clearHistory: true
         });
     }
+}
+
+function onSignInButtonTap() {
+    loginViewModel.signIn();
+}
+
+function onLoginGoogleButtonTap() {
+}
+
+function onForgotPasswordTap() {
 }
 
 /*
@@ -51,4 +61,7 @@ function here makes the navigatingTo="onNavigatingTo" binding in this page’s X
 file work.
 */
 exports.onNavigatingTo = onNavigatingTo;
-exports.onLoginFacebook = onLoginFacebook;
+exports.onLoginFacebookButtonTap = onLoginFacebookButtonTap;
+exports.onSignInButtonTap = onSignInButtonTap;
+exports.onLoginGoogleButtonTap = onLoginGoogleButtonTap;
+exports.onForgotPasswordTap = onForgotPasswordTap;
