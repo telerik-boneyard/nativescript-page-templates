@@ -15,13 +15,15 @@ https://docs.nativescript.org/ui/components.
     </ActionBar>
 
      <StackLayout>
-        <Facebook:LoginButton login="onLoginFacebook"></Facebook:LoginButton>
-        <Button text="Log in with Google +"></Button>
+        <Facebook:LoginButton login="onLoginFacebookButtonTap"></Facebook:LoginButton>
+        <Button text="Log in with Google +" tap="onLoginGoogleButtonTap"></Button>
         <Label text="or"></Label>
 
         <TextField hint="Email Address" keyboardType="email" autocorrect="false" autocapitalization="none" text="{{ email }}"></TextField>
         <TextField hint="Password" secure="true" autocorrect="false" autocapitalization="none" text="{{ password }}"></TextField>
 
-        <Button text="SIGN IN" tap="{{ onSignIn }}"></Button>
+        <Button text="SIGN IN" tap="onSignInButtonTap"></Button>
+        <Label text="Forgot password?" tap="onForgotPasswordTap"></Label>
+
     </StackLayout>
 </Page>

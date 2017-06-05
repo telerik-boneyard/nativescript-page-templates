@@ -6,7 +6,7 @@ function LoginViewModel() {
     viewModel.email = "";
     viewModel.password = "";
 
-    viewModel.onSignIn = function () {
+    viewModel.signIn = function () {
     };
 
     return viewModel;
