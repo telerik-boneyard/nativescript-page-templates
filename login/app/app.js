@@ -7,12 +7,6 @@ purpose of the file is to pass control to the app’s first module.
 require("./bundle-config");
 var application = require("application");
 
-var nsFacebook = require('nativescript-facebook');
-
-application.on(application.launchEvent, function (args) {
-    nsFacebook.init("1771472059772879");
-});
-
 application.start({ moduleName: "login/login-page" });
 
 /*

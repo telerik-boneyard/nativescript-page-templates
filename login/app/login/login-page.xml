@@ -15,7 +15,7 @@ https://docs.nativescript.org/ui/components.
     </ActionBar>
 
      <StackLayout>
-        <Facebook:LoginButton login="onLoginFacebookButtonTap"></Facebook:LoginButton>
+        <Facebook:LoginButton login="onLoginFacebook" logout="onLogoutFacebook"></Facebook:LoginButton>
         <Button text="Log in with Google +" tap="onLoginGoogleButtonTap"></Button>
         <Label text="or"></Label>
 
