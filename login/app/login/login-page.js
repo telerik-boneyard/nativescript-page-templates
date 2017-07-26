@@ -9,7 +9,8 @@ NativeScript adheres to the CommonJS specification for dealing with
 JavaScript modules. The CommonJS require() function is how you import
 JavaScript modules defined in other files.
 */
-var frameModule = require("ui/frame");
+
+var nsFacebook = require('nativescript-facebook');
 var LoginViewModel = require("./login-view-model");
 
 var loginViewModel = new LoginViewModel();
@@ -22,6 +23,7 @@ function onNavigatingTo(args) {
     */
     var page = args.object;
 
+    nsFacebook.init("1771472059772879");
     /*
     A page’s bindingContext is an object that should be used to perform
     data binding between XML markup and JavaScript code. Properties
@@ -35,13 +37,10 @@ function onNavigatingTo(args) {
     page.bindingContext = loginViewModel;
 }
 
-function onLoginFacebookButtonTap(loginResponse) {
-    if (loginResponse && !loginResponse.error) {
-        frameModule.topmost().navigate({
-            moduleName: "home/home-page",
-            clearHistory: true
-        });
-    }
+function onLogoutFacebook(logoutResponse) {
+}
+
+function onLoginFacebook(loginResponse) {
 }
 
 function onSignInButtonTap() {
@@ -61,7 +60,8 @@ function here makes the navigatingTo="onNavigatingTo" binding in this page’s X
 file work.
 */
 exports.onNavigatingTo = onNavigatingTo;
-exports.onLoginFacebookButtonTap = onLoginFacebookButtonTap;
+exports.onLogoutFacebook = onLogoutFacebook;
+exports.onLoginFacebook = onLoginFacebook;
 exports.onSignInButtonTap = onSignInButtonTap;
 exports.onLoginGoogleButtonTap = onLoginGoogleButtonTap;
 exports.onForgotPasswordTap = onForgotPasswordTap;
