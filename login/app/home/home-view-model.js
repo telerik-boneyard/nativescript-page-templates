@@ -1,9 +1,9 @@
-var Observable = require("data/observable").Observable;
+const observableModule = require("data/observable");
 
-function HomeViewModel() {
-    var viewModel = new Observable();
+function TabsViewModel() {
+    const viewModel = observableModule.fromObject({});
 
     return viewModel;
 }
 
-module.exports = HomeViewModel;
+module.exports = TabsViewModel;
