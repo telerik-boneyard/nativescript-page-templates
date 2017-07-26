@@ -1,26 +1,16 @@
-<!--
-The markup in NativeScript apps contains a series of user interface components, each
-of which NativeScript renders with a platform-specific iOS or Android native control.
-You can find a full list of user interface components you can use in your app at
-https://docs.nativescript.org/ui/components.
--->
 <Page navigatingTo="onNavigatingTo" class="page"
-    xmlns:Facebook="nativescript-facebook"
     xmlns="http://schemas.nativescript.org/tns.xsd" >
-    <!--
-    The ActionBar is the NativeScript common abstraction over the Android ActionBar and iOS NavigationBar.
-    http://docs.nativescript.org/ui/action-bar
-    -->
+
     <ActionBar title="Sign up" icon="" class="action-bar">
     </ActionBar>
 
      <StackLayout>
-        <Facebook:LoginButton login="onSignupFacebook"></Facebook:LoginButton>
+        <Button text="Sign up with Facebook" tap="onSignupFacebookButtonTap"></Button>
         <Button text="Sign up with Google +" tap="onSignupGoogleButtonTap"></Button>
         <Label text="or"></Label>
 
         <TextField hint="Name" autocorrect="false" autocapitalization="none" text="{{ name }}"></TextField>
-        <TextField hint="Email Address" keyboardType="email" autocorrect="false" autocapitalization="none" text="{{ email }}"></TextField>
+        <TextField hint="Email" keyboardType="email" autocorrect="false" autocapitalization="none" text="{{ email }}"></TextField>
         <TextField hint="Password" secure="true" autocorrect="false" autocapitalization="none" text="{{ password }}"></TextField>
 
         <Button text="SIGN UP" tap="onSignupButtonTap"></Button>>
