@@ -1,19 +1,7 @@
-/*
-In NativeScript, the app.js file is the entry point to your application.
-You can use this file to perform app-level initialization, but the primary
-purpose of the file is to pass control to the app’s first module.
-*/
-
 require("./bundle-config");
-var application = require("application");
+const application = require("application");
 
-var nsFacebook = require('nativescript-facebook');
-
-application.on(application.launchEvent, function (args) {
-    nsFacebook.init("1771472059772879");
-});
-
-application.start({ moduleName: "login/login-page" });
+application.start({ moduleName: "./login/login-page" });
 
 /*
 Do not place any code after the application has been started as it will not
