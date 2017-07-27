@@ -1,14 +1,17 @@
-var Observable = require("data/observable").Observable;
+const observableModule = require("data/observable");
 
 function SignupViewModel() {
-    var viewModel = new Observable();
+    const viewModel = observableModule.fromObject({
+        name: "",
+        email: "",
+        password: "",
 
-    viewModel.name = "";
-    viewModel.email = "";
-    viewModel.password = "";
-
-    viewModel.signup = function () {
-    };
+        /* ***********************************************************
+        * TODO: Implement sign up.
+        *************************************************************/
+        signup: function () {
+        }
+    });
 
     return viewModel;
 }
