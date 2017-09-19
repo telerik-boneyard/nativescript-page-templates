@@ -3,7 +3,7 @@
     <ActionBar title="Login" icon="" class="action-bar">
     </ActionBar>
 
-     <StackLayout class="pp-t-15">
+     <StackLayout class="p-t-15">
         <Button class="btn btn-outline text-left"  
             tap="onLoginFacebookButtonTap">
             <FormattedString>
