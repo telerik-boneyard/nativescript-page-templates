@@ -13,7 +13,7 @@
                     https://docs.nativescript.org/ui/icon-fonts
                 -->
                 <Span text="&#xf09a;" class="fa"></Span>
-                <Span  text="     Log in with Facebook"></Span>
+                <Span text="     Log in with Facebook"></Span>
             </FormattedString>
         </Button>
 
@@ -21,7 +21,7 @@
             tap="onLoginGoogleButtonTap">
             <FormattedString>
                 <Span text="&#xf0d5;" class="fa"></Span>
-                <Span  text="   Log in with Google +"></Span>
+                <Span text="   Log in with Google +"></Span>
             </FormattedString>       
         </Button>
 
