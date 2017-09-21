@@ -1,9 +1,9 @@
 const observableModule = require("data/observable");
 
-function <%=PascalCaseName%>ViewModel() {
+function <%= PascalCaseName %>ViewModel() {
     const viewModel = observableModule.fromObject({});
 
     return viewModel;
 }
 
-module.exports = <%=PascalCaseName%>ViewModel;
+module.exports = <%= PascalCaseName %>ViewModel;
