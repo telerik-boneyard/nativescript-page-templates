@@ -1,32 +1,30 @@
-const <%=PascalCaseName%>ViewModel = require("./<%=OriginalName%>-view-model");
+const <%= PascalCaseName %>ViewModel = require("./<%= OriginalName %>-view-model");
 
-const viewModel = new <%=PascalCaseName%>ViewModel();
-
+/* ***********************************************************
+* Use the "onNavigatingTo" handler to initialize the page binding context.
+*************************************************************/
 function onNavigatingTo(args) {
-    /* ***********************************************************
-     * Use the "onNavigatingTo" handler to initialize data for the whole
-     * signup layout as a whole.
-     *************************************************************/
-
     const page = args.object;
-
-    page.bindingContext = viewModel;
+    page.bindingContext = new <%= PascalCaseName %>ViewModel();
 }
 
-/* ***********************************************************
-* TODO: Implement Facebook sign up.
-*************************************************************/
 function onSignupFacebookButtonTap() {
+    /* ***********************************************************
+    * Call your Facebook signup logic here.
+    *************************************************************/
 }
 
-/* ***********************************************************
-* TODO: Implement Google login.
-*************************************************************/
 function onSignupGoogleButtonTap() {
+    /* ***********************************************************
+    * Call your Google signup logic here.
+    *************************************************************/
 }
 
-function onSignupButtonTap() {
-    viewModel.signup();
+function onSignupButtonTap(args) {
+    const button = args.object;
+    const bindingContext = button.bindingContext;
+
+    bindingContext.signUp();
 }
 
 exports.onNavigatingTo = onNavigatingTo;

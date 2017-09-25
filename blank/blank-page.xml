@@ -3,6 +3,6 @@
     <ActionBar title="Home" class="action-bar">
     </ActionBar>
 
-     <StackLayout>
+    <StackLayout>
     </StackLayout>
 </Page>

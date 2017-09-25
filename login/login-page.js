@@ -1,37 +1,40 @@
-const <%=PascalCaseName%>ViewModel = require("./<%=OriginalName%>-view-model");
+const <%= PascalCaseName %>ViewModel = require("./<%= OriginalName %>-view-model");
 
-const viewModel = new <%=PascalCaseName%>ViewModel();
-
+/* ***********************************************************
+* Use the "onNavigatingTo" handler to initialize the page binding context.
+*************************************************************/
 function onNavigatingTo(args) {
-    /* ***********************************************************
-     * Use the "onNavigatingTo" handler to initialize data for the whole
-     * login layout as a whole.
-     *************************************************************/
-
     const page = args.object;
-
-    page.bindingContext = viewModel;
+    page.bindingContext = new <%= PascalCaseName %>ViewModel();
 }
 
-exports.onNavigatingTo = onNavigatingTo;
-
-/* ***********************************************************
-* TODO: Implement Facebook login.
-*************************************************************/
 function onLoginFacebookButtonTap() {
+    /* ***********************************************************
+    * Call your Facebook login logic here.
+    *************************************************************/
 }
 
-/* ***********************************************************
-* TODO: Implement Google login.
-*************************************************************/
 function onLoginGoogleButtonTap() {
+    /* ***********************************************************
+    * Call your Google login logic here.
+    *************************************************************/
 }
 
-function onSignInButtonTap() {
-    viewModel.signIn();
+function onSigninButtonTap(args) {
+    const button = args.object;
+    const bindingContext = button.bindingContext;
+
+    bindingContext.signIn();
+}
+
+function onForgotPasswordTap() {
+    /* ***********************************************************
+    * Call your Forgot Password logic here.
+    *************************************************************/
 }
 
 exports.onNavigatingTo = onNavigatingTo;
 exports.onLoginFacebookButtonTap = onLoginFacebookButtonTap;
 exports.onLoginGoogleButtonTap = onLoginGoogleButtonTap;
-exports.onSignInButtonTap = onSignInButtonTap;
+exports.onSigninButtonTap = onSigninButtonTap;
+exports.onForgotPasswordTap = onForgotPasswordTap;
