@@ -2,7 +2,7 @@
     <ActionBar title="Login" class="action-bar">
     </ActionBar>
 
-    <ScrollView orientation="vertical">
+    <ScrollView>
         <StackLayout class="p-t-15">
             <Button class="btn btn-outline text-left" tap="onLoginFacebookButtonTap">
                 <FormattedString>
