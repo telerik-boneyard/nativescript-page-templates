@@ -1,6 +1,6 @@
 const observableModule = require("data/observable");
 
-function <%= PascalCaseNam %>ViewModel() {
+function <%= PascalCaseName %>ViewModel() {
     const viewModel = observableModule.fromObject({
         name: "",
         email: "",
