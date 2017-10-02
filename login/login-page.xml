@@ -1,5 +1,6 @@
 <Page navigatingTo="onNavigatingTo" class="page" xmlns="http://schemas.nativescript.org/tns.xsd">
-    <ActionBar title="Login" class="action-bar">
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Login"></Label>
     </ActionBar>
 
     <ScrollView>
