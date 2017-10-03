@@ -8,15 +8,11 @@ function onNavigatingTo(args) {
     page.bindingContext = new <%= PascalCaseName %>ViewModel();
 }
 
-function onLoginFacebookButtonTap() {
+function onLoginWithSocialProvider() {
     /* ***********************************************************
-    * Call your Facebook login logic here.
-    *************************************************************/
-}
-
-function onLoginGoogleButtonTap() {
-    /* ***********************************************************
-    * Call your Google login logic here.
+    * For log in with social provider you can add your custom logic or
+    use NativeScript plugin for log in with Facebook
+    https://github.com/NativeScript/nativescript-facebook
     *************************************************************/
 }
 
