@@ -11,8 +11,8 @@ function onNavigatingTo(args) {
 function onSignupWithSocialProvider() {
     /* ***********************************************************
     * For sign up with social provider you can add your custom logic or
-    use NativeScript plugin for sign up with Facebook
-    https://github.com/NativeScript/nativescript-facebook
+    * use NativeScript plugin for sign up with Facebook
+    * http://market.nativescript.org/plugins/nativescript-facebook
     *************************************************************/
 }
 
