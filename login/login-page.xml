@@ -5,7 +5,7 @@
 
     <ScrollView>
         <StackLayout class="p-t-15">
-            <Button class="btn btn-outline" tap="onLoginWithSocialProvider" text="Log in with Social Provider"></Button>
+            <Button class="btn btn-outline" tap="onLoginWithSocialProviderButtonTap" text="Log in with Social Provider"></Button>
 
             <Label class="m-t-10 text-center" text="or"></Label>
 
