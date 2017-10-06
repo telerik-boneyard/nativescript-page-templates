@@ -30,7 +30,6 @@ function onForgotPasswordTap() {
 }
 
 exports.onNavigatingTo = onNavigatingTo;
-exports.onLoginFacebookButtonTap = onLoginFacebookButtonTap;
-exports.onLoginGoogleButtonTap = onLoginGoogleButtonTap;
+exports.onLoginWithSocialProvider = onLoginWithSocialProvider;
 exports.onSigninButtonTap = onSigninButtonTap;
 exports.onForgotPasswordTap = onForgotPasswordTap;

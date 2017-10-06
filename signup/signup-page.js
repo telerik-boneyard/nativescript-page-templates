@@ -24,6 +24,5 @@ function onSignupButtonTap(args) {
 }
 
 exports.onNavigatingTo = onNavigatingTo;
-exports.onSignupFacebookButtonTap = onSignupFacebookButtonTap;
-exports.onSignupGoogleButtonTap = onSignupGoogleButtonTap;
+exports.onSignupWithSocialProvider = onSignupWithSocialProvider;
 exports.onSignupButtonTap = onSignupButtonTap;
