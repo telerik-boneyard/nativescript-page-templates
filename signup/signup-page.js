@@ -8,7 +8,7 @@ function onNavigatingTo(args) {
     page.bindingContext = new <%= PascalCaseName %>ViewModel();
 }
 
-function onSignupWithSocialProvider() {
+function onSignupWithSocialProviderButtonTap() {
     /* ***********************************************************
     * For sign up with social provider you can add your custom logic or
     * use NativeScript plugin for sign up with Facebook
@@ -24,6 +24,5 @@ function onSignupButtonTap(args) {
 }
 
 exports.onNavigatingTo = onNavigatingTo;
-exports.onSignupFacebookButtonTap = onSignupFacebookButtonTap;
-exports.onSignupGoogleButtonTap = onSignupGoogleButtonTap;
+exports.onSignupWithSocialProviderButtonTap = onSignupWithSocialProviderButtonTap;
 exports.onSignupButtonTap = onSignupButtonTap;
