@@ -1,7 +1,7 @@
 {
   "name": "tns-page-templates",
   "version": "3.2.2",
-  "description": "Simple page templates for Vanilla NativeScript apps using JavaScript Edit Add topics",
+  "description": "Simple page templates for Vanilla NativeScript apps using JavaScript.",
   "author": "Telerik <support@telerik.com>",
   "license": "Apache-2.0",
   "keywords": [
